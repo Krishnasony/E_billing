@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "571232509406",
+    "firebase_url": "https://electricitybilling-cc3ba.firebaseio.com",
+    "project_id": "electricitybilling-cc3ba",
+    "storage_bucket": "electricitybilling-cc3ba.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:571232509406:android:67cb7e31b94a88a3",
+        "android_client_info": {
+          "package_name": "com.example.krishanasony.e_billing"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "571232509406-br6tshkg2nh7ur9ut6r7mp6gro7ipdr3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.krishanasony.e_billing",
+            "certificate_hash": "7080197886597eb5796e522a5a4d8ecb5b12180c"
+          }
+        },
+        {
+          "client_id": "571232509406-1enfl1nj10ahva41breqduseile61to3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDc_6vwrM-3nhaEF7JGIFxw6lXIE1Ob5i4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "571232509406-1enfl1nj10ahva41breqduseile61to3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:571232509406:android:490dd14878fe0991",
+        "android_client_info": {
+          "package_name": "com.example.krishanasony.ebs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "571232509406-uncnp539t6i9k0vuuu5rkvhhmvhckqio.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.krishanasony.ebs",
+            "certificate_hash": "7080197886597eb5796e522a5a4d8ecb5b12180c"
+          }
+        },
+        {
+          "client_id": "571232509406-1enfl1nj10ahva41breqduseile61to3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDc_6vwrM-3nhaEF7JGIFxw6lXIE1Ob5i4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "571232509406-1enfl1nj10ahva41breqduseile61to3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

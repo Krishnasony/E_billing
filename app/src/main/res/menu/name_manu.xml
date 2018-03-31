@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@+id/reg"
+    android:title="Registration" />
+    <item android:id="@+id/ctmr"
+        android:title="custmer Care" />
+    <item android:id="@+id/pyh"
+        android:title="Payment History" />
+    <item android:id="@+id/splp"
+        android:title="Supply postion" />
+    <item android:id="@+id/fed"
+    android:title="Feedback" />
+    <item android:id="@+id/blp"
+        android:title="Bill Pay" />
+    <item android:id="@+id/l_out"
+        android:title="Log Out" />
+
+</menu>
