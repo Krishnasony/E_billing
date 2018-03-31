@@ -6,8 +6,6 @@
         android:title="custmer Care" />
     <item android:id="@+id/pyh"
         android:title="Payment History" />
-    <item android:id="@+id/splp"
-        android:title="Supply postion" />
     <item android:id="@+id/fed"
     android:title="Feedback" />
     <item android:id="@+id/blp"

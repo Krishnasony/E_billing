@@ -94,9 +94,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                 Toast.makeText(this, "this is Payment History", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(this,Payment_HistoryActivity.class));
                 break;
-            case R.id.splp:
-                Toast.makeText(this, "this is suply postion", Toast.LENGTH_SHORT).show();
-                break;
+
             case R.id.fed:
                 Toast.makeText(this, "this is Feedback", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(this,FeedbackActivity.class));

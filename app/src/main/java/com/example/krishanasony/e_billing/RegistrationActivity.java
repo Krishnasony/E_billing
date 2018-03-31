@@ -30,12 +30,12 @@ public class RegistrationActivity extends AppCompatActivity{
         regbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                final String Name= nametxt.getText().toString().trim();
-                final String REG_number = edt1.getText().toString().trim();
+                final String name= nametxt.getText().toString().trim();
+                final String registrationnumber = edt1.getText().toString().trim();
 
-                    Register.child("name").setValue(Name);
-                    Register.child("registration no").setValue(REG_number);
-
+                    Register.child("consumer_Name").setValue(name);
+                    Register.child("reg_number").setValue(registrationnumber);
+                    Toast.makeText(getApplicationContext(),"Successfully Registered",Toast.LENGTH_LONG).show();
                 }
         });
     }
