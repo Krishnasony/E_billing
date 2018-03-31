@@ -45,6 +45,15 @@
             android:textSize="30dp"
             android:textColor="#000"/>
         <EditText
+            android:id="@+id/nametxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Your Name"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="13dp"/>
+        <EditText
             android:id="@+id/edt1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -56,7 +65,7 @@
         <Button
             android:id="@+id/regbtn"
             android:layout_width="match_parent"
-            android:layout_height="35dp"
+            android:layout_height="38dp"
             android:text="register Service"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"

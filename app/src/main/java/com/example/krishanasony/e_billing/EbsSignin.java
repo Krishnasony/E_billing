@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnFailureListener;
@@ -25,6 +26,13 @@ public class EbsSignin extends AppCompatActivity {
         editemail = findViewById(R.id.email1);
         editpassword =findViewById(R.id.pass1);
         signin = findViewById(R.id.signin1);
+        TextView click = findViewById(R.id.clickhere);
+        click.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(EbsSignin.this,EbsSignup.class));
+            }
+        });
 
         mAuth = FirebaseAuth.getInstance();
         signin.setOnClickListener(new View.OnClickListener() {
