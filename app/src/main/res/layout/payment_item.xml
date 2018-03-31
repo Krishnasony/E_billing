@@ -10,52 +10,38 @@
        android:layout_height="wrap_content"
        android:elevation="20dp"
        app:cardCornerRadius="10dp">
-      <TextView
-          android:layout_width="match_parent"
-          android:layout_height="match_parent"
-          android:text="Receipt Number:"
-          android:textSize="27dp"
-          android:textStyle="bold"
-          android:layout_marginTop="20dp"
-          android:layout_marginLeft="15dp"
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+           <TextView
+               android:id="@+id/recieptn"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center_horizontal"
+               android:text="Reciept_no."
+               android:textStyle="bold"
+               android:textSize="30dp"
+               android:textColor="#000"/>
+           <TextView
+               android:id="@+id/bdate"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center_horizontal"
+               android:text="Bill_date"
+               android:textStyle="bold"
+               android:textSize="25dp"
+               android:textColor="#00008b"/>
+           <TextView
+               android:id="@+id/amount"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center_horizontal"
+               android:text="Amount"
+               android:textStyle="bold"
+               android:textSize="20dp"
+               android:textColor="#000"/>
 
-          />
-      <TextView
-          android:layout_width="match_parent"
-          android:layout_height="match_parent"
-          android:layout_marginTop="70dp"
-          android:text="Payment Date:"
-          android:layout_marginLeft="20dp"
-          android:textSize="25dp"
-
-          />
-      <TextView
-          android:layout_width="match_parent"
-          android:layout_height="match_parent"
-          android:layout_marginTop="70dp"
-          android:text="Payment Date:"
-          android:layout_marginLeft="20dp"
-          android:textSize="25dp"
-
-          />
-      <TextView
-          android:layout_width="match_parent"
-          android:layout_height="match_parent"
-          android:layout_marginTop="70dp"
-          android:text="Payment Date:"
-          android:layout_marginLeft="20dp"
-          android:textSize="25dp"
-
-          />
-      <TextView
-          android:layout_width="match_parent"
-          android:layout_height="match_parent"
-          android:layout_marginTop="110dp"
-          android:text="Amount:"
-          android:layout_marginLeft="20dp"
-          android:textSize="25dp"
-          android:textStyle="bold"/>
-
-
+       </LinearLayout>
    </android.support.v7.widget.CardView>
 </LinearLayout>
