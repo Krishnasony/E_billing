@@ -3,33 +3,39 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/bgs"
+    android:background="#3E2723"
     android:layout_height="match_parent">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Sign In"
         android:textSize="60dp"
-        android:layout_marginLeft="80dp"
+        android:layout_marginLeft="90dp"
         android:textStyle="italic"
-        android:textColor="@color/colorPrimary"
+        android:textColor="#ffff"
         android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
 
         />
     <EditText
         android:id="@+id/email1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:background="@drawable/box"
         android:hint="Enter Email"
+        android:textSize="20dp"
         android:paddingLeft="10dp"
+        android:layout_marginLeft="45dp"
         android:layout_marginTop="30dp"
 
         />
     <EditText
         android:id="@+id/pass1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:background="@drawable/box"
         android:hint="Enter Password"
+        android:textSize="20dp"
+        android:layout_marginLeft="45dp"
         android:paddingLeft="10dp"
         android:layout_marginTop="30dp"
 
@@ -37,20 +43,22 @@
 
     <Button
         android:id="@+id/signin1"
-        android:layout_width="match_parent"
+        android:layout_width="220dp"
         android:layout_height="wrap_content"
         android:text="Sign in"
-        android:background="@color/colorPrimaryDark"
+        android:background="@drawable/round"
         android:textColor="#fff"
         android:textStyle="bold"
-        android:layout_marginRight="40dp"
-        android:layout_marginLeft="40dp"
+        android:textSize="25dp"
+        android:layout_marginTop="30dp"
+        android:textAlignment="center"
+        android:layout_marginLeft="77dp"
         />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="forget password"
-        android:layout_marginLeft="230dp"
+        android:layout_marginLeft="200dp"
         android:layout_marginTop="20dp"
         android:textSize="20dp"
 
@@ -63,7 +71,7 @@
         android:textSize="25sp"
         android:textStyle="bold"
         android:textColor="#00008b"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="32dp"
         android:layout_gravity="center_horizontal"/>
 
 </LinearLayout>

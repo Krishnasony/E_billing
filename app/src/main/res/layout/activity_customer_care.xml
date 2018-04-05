@@ -6,6 +6,7 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:layout_marginTop="40dp"
+
     tools:context="com.example.krishanasony.e_billing.Bill_payActivity">
     <android.support.v7.widget.CardView
         android:layout_width="350dp"

@@ -22,7 +22,7 @@
                android:text="Reciept_no."
                android:textStyle="bold"
                android:textSize="30dp"
-               android:textColor="#000"/>
+               android:textColor="#861616"/>
            <TextView
                android:id="@+id/bdate"
                android:layout_width="wrap_content"

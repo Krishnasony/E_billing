@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "571232509406-asbtmskiuoulrkkbfrt72jp7pthod58r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.krishanasony.e_billing",
+            "certificate_hash": "3a7ba716f0b490c9421162fc2de4bc73fd7498cc"
+          }
+        },
+        {
           "client_id": "571232509406-br6tshkg2nh7ur9ut6r7mp6gro7ipdr3.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
