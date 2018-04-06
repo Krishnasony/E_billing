@@ -19,7 +19,7 @@ import com.google.firebase.database.Query;
 public class Payment_HistoryActivity extends AppCompatActivity {
     RecyclerView recyclerView=null;
     DatabaseReference mdatabase;
-    //// toh open kr or branch bna
+    //  milk dena
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
