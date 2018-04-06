@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
+    android:background="@drawable/round_button"
     android:layout_height="wrap_content">
    <android.support.v7.widget.CardView
        android:layout_margin="5dp"
@@ -21,7 +22,7 @@
                android:layout_gravity="center_horizontal"
                android:text="Reciept_no."
                android:textStyle="bold"
-               android:textSize="30dp"
+               android:textSize="27dp"
                android:textColor="#861616"/>
            <TextView
                android:id="@+id/bdate"

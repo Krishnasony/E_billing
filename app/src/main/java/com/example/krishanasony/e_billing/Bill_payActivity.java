@@ -28,7 +28,7 @@ public class Bill_payActivity extends AppCompatActivity {
         sc_no = findViewById(R.id.sc_no);
         con_nm = findViewById(R.id.con_nm);
         b_dat = findViewById(R.id.b_dat);
-        amt_txt = findViewById(R.id.amt_txt);
+        //amt_txt = findViewById(R.id.amt_txt);
 
 
         sub_btn = findViewById(R.id.sub_btn);

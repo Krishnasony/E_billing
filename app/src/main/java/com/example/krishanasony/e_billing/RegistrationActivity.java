@@ -13,7 +13,7 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class RegistrationActivity extends AppCompatActivity{
     EditText nametxt,edt1;
-    Button regbtn;
+    Button regbtn,addbtn;
     FirebaseDatabase db;
     DatabaseReference Register;
 
@@ -26,6 +26,14 @@ public class RegistrationActivity extends AppCompatActivity{
         edt1=findViewById(R.id.edt1);
         nametxt=findViewById(R.id.nametxt);
         regbtn=findViewById(R.id.regbtn);
+        addbtn=findViewById(R.id.addbtn);
+        addbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(RegistrationActivity.this,RegistrationActivity.class));
+
+            }
+        });
 
         regbtn.setOnClickListener(new View.OnClickListener() {
             @Override
