@@ -1,0 +1,10 @@
+<root>
+    <item
+        name='android.os.Binder void onShellCommand(java.io.FileDescriptor, java.io.FileDescriptor, java.io.FileDescriptor, java.lang.String[], android.os.ShellCallback, android.os.ResultReceiver) 1'>
+        <annotation name='java.lang.Deprecated' />
+        <annotation name='android.support.annotation.NonNull' />
+    </item>
+    <item name='android.os.ShellCallback CREATOR'>
+        <annotation name='java.lang.Deprecated' />
+    </item>
+</root>

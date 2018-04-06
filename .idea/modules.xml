@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/E_billing.iml" filepath="$PROJECT_DIR$/E_billing.iml" />
+      <module fileurl="file://G:/MygitRepos/E_billing/E_billing.iml" filepath="G:/MygitRepos/E_billing/E_billing.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://G:/MygitRepos/E_billing/app/app.iml" filepath="G:/MygitRepos/E_billing/app/app.iml" />
     </modules>
   </component>
 </project>

@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.krishanasony.e_billing">
-<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,8 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Electricity"
-            >
+        <activity android:name=".Electricity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -24,7 +25,10 @@
         <activity android:name=".Payment_HistoryActivity" />
         <activity android:name=".FeedbackActivity" />
         <activity android:name=".Bill_payActivity" />
-        <activity android:name=".Customer_careActivity"></activity>
+        <activity android:name=".Customer_careActivity" />
+        <activity android:name=".Pay" />
+        <activity android:name=".Cong.Paymentdetails" />
+        <activity android:name=".forgot_Pssd"></activity>
     </application>
 
 </manifest>
