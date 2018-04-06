@@ -1,10 +1,12 @@
 package com.example.krishanasony.e_billing;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.firebase.database.DatabaseReference;
@@ -28,6 +30,13 @@ public class Bill_payActivity extends AppCompatActivity {
         b_dat = findViewById(R.id.b_dat);
         amt_txt = findViewById(R.id.amt_txt);
         sub_btn = findViewById(R.id.sub_btn);
+        TextView click = findViewById(R.id.clickhere);
+        click.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(Bill_payActivity.this,Pay.class));
+            }
+        });
 
         sub_btn.setOnClickListener(new View.OnClickListener() {
             @Override

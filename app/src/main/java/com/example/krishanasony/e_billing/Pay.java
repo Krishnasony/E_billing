@@ -10,6 +10,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.krishanasony.e_billing.Cong.Cong;
+import com.example.krishanasony.e_billing.Cong.Paymentdetails;
 import com.paypal.android.sdk.payments.PayPalConfiguration;
 import com.paypal.android.sdk.payments.PayPalPayment;
 import com.paypal.android.sdk.payments.PayPalService;
@@ -27,7 +28,7 @@ public class Pay extends AppCompatActivity {
             .clientId(Cong.PAYPAL_CLIENT_ID);
     Button BtnPayNow;
     EditText edtAmt;
-    String amount =""
+    String amount;
     @Override
     protected void onDestroy() {
         stopService(new Intent(this, PayPalService.class));

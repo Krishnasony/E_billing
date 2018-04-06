@@ -27,7 +27,7 @@
         <activity android:name=".Bill_payActivity" />
         <activity android:name=".Customer_careActivity" />
         <activity android:name=".Pay" />
-        <activity android:name=".Paymentdetails"></activity>
+        <activity android:name=".Cong.Paymentdetails"></activity>
     </application>
 
 </manifest>
