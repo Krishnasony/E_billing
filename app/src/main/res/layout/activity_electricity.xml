@@ -52,7 +52,6 @@
             android:textStyle="bold"
             android:layout_weight="10"
             />
-
     </LinearLayout>
 
     <TextView
