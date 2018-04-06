@@ -22,13 +22,14 @@ import org.json.JSONException;
 import java.math.BigDecimal;
 
 public class Pay extends AppCompatActivity {
-    public static final int PAYPAL_REQUEST_CODE= 7171;
+    public static final int PAYPAL_REQUEST_CODE = 7171;
     private static PayPalConfiguration cong = new PayPalConfiguration()
             .environment(PayPalConfiguration.ENVIRONMENT_SANDBOX)
             .clientId(Cong.PAYPAL_CLIENT_ID);
     Button BtnPayNow;
     EditText edtAmt;
     String amount;
+
     @Override
     protected void onDestroy() {
         stopService(new Intent(this, PayPalService.class));
@@ -39,13 +40,14 @@ public class Pay extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pay);
-        Intent intent = new Intent(this,PayPalService.class);
+        Intent intent = new Intent(this, PayPalService.class);
 
-        intent.putExtra(PayPalService.EXTRA_PAYPAL_CONFIGURATION, cong);;
+        intent.putExtra(PayPalService.EXTRA_PAYPAL_CONFIGURATION, cong);
+
         startService(intent);
 
-        BtnPayNow= (Button)findViewById(R.id.BtnPayNow);
-        edtAmt = (EditText)findViewById(R.id.edtAmt);
+        BtnPayNow = (Button) findViewById(R.id.BtnPayNow);
+        edtAmt = (EditText) findViewById(R.id.edtAmt);
 
 
         BtnPayNow.setOnClickListener(new View.OnClickListener() {
@@ -61,7 +63,7 @@ public class Pay extends AppCompatActivity {
         amount = edtAmt.getText().toString();
 
         //Creating a paypalpayment
-          PayPalPayment PayPalPayment = new PayPalPayment(new BigDecimal(String.valueOf(amount)), "USD", "Pay fo electricity",PayPalPayment.PAYMENT_INTENT_SALE);
+        PayPalPayment PayPalPayment = new PayPalPayment(new BigDecimal(String.valueOf(amount)), "USD", "Pay fo electricity", com.paypal.android.sdk.payments.PayPalPayment.PAYMENT_INTENT_SALE);
 
         //Creating Paypal Payment activity intent
         Intent intent = new Intent(this, PaymentActivity.class);
@@ -70,12 +72,13 @@ public class Pay extends AppCompatActivity {
         intent.putExtra(PayPalService.EXTRA_PAYPAL_CONFIGURATION, cong);
 
         //Puting paypal payment to the intent
-        intent.putExtra(PaymentActivity.EXTRA_PAYMENT,PayPalPayment);
+        intent.putExtra(PaymentActivity.EXTRA_PAYMENT, PayPalPayment);
 
         //Starting the intent activity for result
         //the request code will be used on the method onActivityResult
         startActivityForResult(intent, PAYPAL_REQUEST_CODE);
     }
+
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         //If the result is from paypal
@@ -107,4 +110,5 @@ public class Pay extends AppCompatActivity {
                 Toast.makeText(this, "Invalid", Toast.LENGTH_SHORT).show();
             }
         }
+    }
 }

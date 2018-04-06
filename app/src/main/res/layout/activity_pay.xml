@@ -1,39 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Pay">
     <LinearLayout
+
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_centerInParent="true"
         android:layout_height="wrap_content">
-        <EditText
-            android:id="@+id/edtAmt"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Enter Amount"/>
+        <android.support.v7.widget.CardView
+            android:layout_width="350dp"
+            android:layout_height="70dp"
+            android:elevation="13dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="80dp"
+
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="40dp"
+                android:text="Enter Number Of Unit Used :"
+                android:textSize="20dp"
+                android:textStyle="bold"
+
+                />
+            <EditText
+                android:id="@+id/amt_txt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="425"
+                android:layout_marginTop="9dp"
+                android:layout_marginLeft="50dp"/>
+
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="350dp"
+            android:layout_height="70dp"
+            android:elevation="13dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="20dp"
+
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="40dp"
+                android:text="Total Amount:"
+                android:textSize="20dp"
+                android:textStyle="bold"
+
+                />
+            <TextView
+                android:id="@+id/edtAmt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="425"
+                android:layout_marginTop="9dp"
+                android:layout_marginLeft="50dp"/>
+
+        </android.support.v7.widget.CardView>
+
         <Button
             android:id="@+id/BtnPayNow"
-            android:layout_width="match_parent"
+            android:layout_width="230dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/round_button"
             android:layout_height="wrap_content"
             android:text="Pay Now"/>
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
     </LinearLayout>
 
-</RelativeLayout>
+</LinearLayout>

@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:orientation="vertical"
-    android:background="#3E2723"
+    android:background="@drawable/round_button"
     android:layout_height="match_parent">
     // a gya m
     <TextView
@@ -25,9 +25,7 @@
         android:hint="Enter Email"
         android:textSize="20dp"
         android:paddingLeft="10dp"
-        android:layout_marginLeft="45dp"
-        android:layout_marginTop="30dp"
-
+        android:layout_margin="45dp"
         />
     <EditText
         android:id="@+id/pass1"
@@ -37,8 +35,9 @@
         android:hint="Enter Password"
         android:textSize="20dp"
         android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
         android:paddingLeft="10dp"
-        android:layout_marginTop="30dp"
+
 
         />
 

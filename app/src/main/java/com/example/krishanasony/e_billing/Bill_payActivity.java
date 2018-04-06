@@ -31,17 +31,12 @@ public class Bill_payActivity extends AppCompatActivity {
         amt_txt = findViewById(R.id.amt_txt);
 
 
-        sub_btn = (Button) findViewById(R.id.sub_btn);
-        sub_btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(Bill_payActivity.this,Pay.class));
-            }
-        });
+        sub_btn = findViewById(R.id.sub_btn);
 
         sub_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                startActivity(new Intent(Bill_payActivity.this,Pay.class));
                 final String servicenumber = sc_no.getText().toString().trim();
                 final String coonsumername = con_nm.getText().toString().trim();
                 final String billingdate = b_dat.getText().toString().trim();
