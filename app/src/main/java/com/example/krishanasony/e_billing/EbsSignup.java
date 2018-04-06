@@ -45,7 +45,7 @@ public class EbsSignup extends AppCompatActivity {
         signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //startActivity(new Intent(EbsSignup.this,EbsSignin.class));
+                startActivity(new Intent(EbsSignup.this,EbsSignin.class));
 
 //                   final  String Lname =editlname.getText().toString().trim();
                 final String Fname = editfname.getText().toString().trim();

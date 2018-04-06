@@ -14,16 +14,19 @@
             android:id="@+id/txtid"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textSize="20dp"
             android:text="Transation id"/>
         <TextView
             android:id="@+id/txtamt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textSize="20dp"
             android:text="Amount"/>
         <TextView
             android:id="@+id/txtstatus"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textSize="20dp"
             android:text="Status"/>
 
 
