@@ -40,9 +40,10 @@
             android:layout_marginTop="20dp"
 
             >
+
             <EditText
                 android:id="@+id/edtAmt"
-                android:layout_width="match_parent"
+                android:layout_width="312dp"
                 android:layout_height="wrap_content"
 
                 android:layout_marginLeft="40dp"
