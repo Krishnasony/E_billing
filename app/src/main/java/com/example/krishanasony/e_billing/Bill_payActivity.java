@@ -29,9 +29,10 @@ public class Bill_payActivity extends AppCompatActivity {
         con_nm = findViewById(R.id.con_nm);
         b_dat = findViewById(R.id.b_dat);
         amt_txt = findViewById(R.id.amt_txt);
-        sub_btn = findViewById(R.id.sub_btn);
-        TextView click = findViewById(R.id.clickhere);
-        click.setOnClickListener(new View.OnClickListener() {
+
+
+        sub_btn = (Button) findViewById(R.id.sub_btn);
+        sub_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(Bill_payActivity.this,Pay.class));
