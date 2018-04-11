@@ -25,21 +25,10 @@
             android:layout_weight="1"
              android:textColor="#ffff"
             android:textStyle="bold"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="20dp"
             android:background="@drawable/round"
             />
-        <Button
-            android:id="@+id/btn2"
-            android:layout_width="118dp"
-            android:layout_height="60dp"
-            android:text="Payment History"
-            android:textSize="12dp"
-            android:layout_weight="1"
-            android:textColor="#ffff"
-            android:textStyle="bold"
-            android:layout_marginLeft="10dp"
-            android:background="@drawable/round"
-            />
+
         <Button
             android:id="@+id/btn3"
             android:layout_width="118dp"
@@ -48,7 +37,8 @@
             android:layout_weight="1"
             android:textColor="#ffff"
             android:textStyle="bold"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="0dp"
             android:background="@drawable/round"
             />
     </LinearLayout>
@@ -60,10 +50,10 @@
         android:layout_marginRight="10dp"
         android:orientation="horizontal">
         <Button
-            android:id="@+id/btn4"
+            android:id="@+id/btn2"
             android:layout_width="118dp"
             android:layout_height="60dp"
-            android:text="Bill Pay"
+            android:text="Payment History"
             android:layout_weight="1"
             android:textColor="#ffff"
             android:textStyle="bold"
@@ -83,10 +73,32 @@
             />
 
     </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="310dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp">
+        <Button
+            android:id="@+id/btn4"
+            android:layout_width="118dp"
+            android:layout_height="60dp"
+            android:text="Bill Pay"
+            android:textSize="12dp"
+            android:layout_weight="1"
+            android:textColor="#ffff"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/round"
+            />
+
+
+    </LinearLayout>
     <android.support.design.widget.NavigationView
         android:id="@+id/navbar"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         app:menu="@menu/name_manu"
         android:layout_gravity="start">
 

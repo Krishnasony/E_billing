@@ -1,4 +1,4 @@
-package com.example.krishanasony.e_billing.Cong;
+package com.example.krishanasony.e_billing;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -14,7 +14,7 @@ import java.text.Format;
 import java.util.ResourceBundle;
 
 public class Paymentdetails extends AppCompatActivity {
-    TextView txtid, txtamt, txtstatus;
+    TextView txtid,txtamt,txtstatus;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,12 +36,12 @@ public class Paymentdetails extends AppCompatActivity {
         }
     }
 
-    private void showDetails(JSONObject response, String paymentAmount) throws JSONException {
+    private void showDetails(JSONObject jsonObject, String paymentAmount) throws JSONException {
 
         //Showing the details from json object
         try {
-            txtid.setText(response.getString("id"));
-            txtstatus.setText(response.getString("state"));
+            txtid.setText(jsonObject.getString("id"));
+            txtstatus.setText(jsonObject.getString("state"));
             txtamt.setText(paymentAmount + " USD");
             ;
         } catch (JSONException e) {

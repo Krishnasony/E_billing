@@ -27,14 +27,15 @@
         />
     <Button
         android:id="@+id/btn"
-        android:layout_width="match_parent"
-        android:layout_height="35dp"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
         android:text="post"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:textColor="#ffff"
+        android:background="@drawable/round"
+        android:textColor="#fff"
         android:textStyle="bold"
+        android:textSize="25dp"
         android:layout_marginTop="30dp"
-        android:background="#2ba61e"/>
+        android:textAlignment="center"
+        android:layout_marginLeft="77dp"/>
 
 </LinearLayout>

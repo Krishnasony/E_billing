@@ -5,7 +5,7 @@
     android:background="@drawable/round_button"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Cong.Paymentdetails">
+    tools:context=".Paymentdetails">
     <LinearLayout
         android:layout_centerInParent="true"
         android:layout_width="match_parent"

@@ -13,7 +13,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class Bill_payActivity extends AppCompatActivity {
-    EditText sc_no,con_nm,b_dat,amt_txt;
+    EditText sc_no,con_nm,b_dat;
     Button sub_btn;
     FirebaseDatabase db;
     DatabaseReference Bill_pay;
@@ -40,13 +40,13 @@ public class Bill_payActivity extends AppCompatActivity {
                 final String servicenumber = sc_no.getText().toString().trim();
                 final String coonsumername = con_nm.getText().toString().trim();
                 final String billingdate = b_dat.getText().toString().trim();
-                final String totalamount = amt_txt.getText().toString().trim();
+                //final String totalamount = amt_txt.getText().toString().trim();
 
                 Bill_pay.child("service_number").setValue(servicenumber);
                 Bill_pay.child("consumer_name").setValue(coonsumername);
                 Bill_pay.child("billing_date").setValue(billingdate);
-                Bill_pay.child("total_amount").setValue(totalamount);
-                Toast.makeText(getApplicationContext(), "Successfully Payment done", Toast.LENGTH_LONG).show();
+               // Bill_pay.child("total_amount").setValue(totalamount);
+                Toast.makeText(getApplicationContext(), "Confirm payment", Toast.LENGTH_LONG).show();
             }
 
             });

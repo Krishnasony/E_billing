@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 <item android:id="@+id/reg"
-    android:title="Registration" />
+    android:title="Registration" android:icon="@drawable/regist"/>
     <item android:id="@+id/ctmr"
-        android:title="custmer Care" />
+        android:title="custmer Care" android:icon="@drawable/cus" />
     <item android:id="@+id/pyh"
-        android:title="Payment History" />
+        android:title="Payment History" android:icon="@drawable/his" />
     <item android:id="@+id/fed"
-    android:title="Feedback" />
+    android:title="Feedback" android:icon="@drawable/ic_feedback_black_24dp" />
     <item android:id="@+id/blp"
-        android:title="Bill Pay" />
+        android:title="Bill Pay" android:icon="@drawable/bill" />
     <item android:id="@+id/l_out"
         android:title="Log Out" />
 

@@ -1,5 +1,6 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:background="@drawable/round_button"
@@ -28,12 +29,7 @@
         android:layout_marginTop="10dp"
 
         />
-    <!--<EditText-->
-    <!--android:id="@+id/edittextlname"-->
-    <!--android:layout_width="match_parent"-->
-    <!--android:layout_height="wrap_content"-->
-    <!--android:hint="Last Name"-->
-    <!--android:paddingLeft="10dp" />-->
+
     <EditText
         android:id="@+id/edittextemail"
         android:layout_weight="1"

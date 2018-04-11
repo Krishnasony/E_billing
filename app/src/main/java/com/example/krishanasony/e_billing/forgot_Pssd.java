@@ -22,12 +22,12 @@ public class forgot_Pssd extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_forgot__pssd);
-        edtTextmail = findViewById(R.id.edittextemail);
+        edtTextmail = findViewById(R.id.edtTextmail);
         changepasword =findViewById(R.id.changepasword);
         changepasword.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String Email =edtTextmail.getText().toString().trim();
+                String Email = edtTextmail.getText().toString().trim();
                 FirebaseAuth.getInstance().sendPasswordResetEmail(Email)
                         .addOnCompleteListener(new OnCompleteListener<Void>() {
                             @Override
