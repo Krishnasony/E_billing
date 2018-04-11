@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.krishanasony.e_billing.Cong.Cong;
@@ -29,7 +30,7 @@ public class Pay extends AppCompatActivity {
             .clientId(Cong.PAYPAL_CLIENT_ID);
     Button BtnPayNow;
     EditText edtAmt;
-    String amount="";
+    String amount;
 
     @Override
     protected void onDestroy() {

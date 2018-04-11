@@ -49,6 +49,6 @@ public class Bill_payActivity extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), "Confirm payment", Toast.LENGTH_LONG).show();
             }
 
-            });
-        }
+        });
     }
+}
