@@ -10,7 +10,6 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.krishanasony.e_billing.Cong.Cong;
-import com.example.krishanasony.e_billing.Cong.Paymentdetails;
 import com.paypal.android.sdk.payments.PayPalConfiguration;
 import com.paypal.android.sdk.payments.PayPalPayment;
 import com.paypal.android.sdk.payments.PayPalService;
@@ -22,13 +21,15 @@ import org.json.JSONException;
 import java.math.BigDecimal;
 
 public class Pay extends AppCompatActivity {
+
     public static final int PAYPAL_REQUEST_CODE = 7171;
+
     private static PayPalConfiguration cong = new PayPalConfiguration()
             .environment(PayPalConfiguration.ENVIRONMENT_SANDBOX)
             .clientId(Cong.PAYPAL_CLIENT_ID);
     Button BtnPayNow;
     EditText edtAmt;
-    String amount;
+    String amount="";
 
     @Override
     protected void onDestroy() {
@@ -63,7 +64,7 @@ public class Pay extends AppCompatActivity {
         amount = edtAmt.getText().toString();
 
         //Creating a paypalpayment
-        PayPalPayment PayPalPayment = new PayPalPayment(new BigDecimal(String.valueOf(amount)), "USD", "Pay fo electricity", com.paypal.android.sdk.payments.PayPalPayment.PAYMENT_INTENT_SALE);
+        PayPalPayment payPalPayment =new PayPalPayment (new BigDecimal(String.valueOf(amount)),"USD","Pay for electricity",PayPalPayment.PAYMENT_INTENT_SALE);
 
         //Creating Paypal Payment activity intent
         Intent intent = new Intent(this, PaymentActivity.class);
@@ -72,7 +73,7 @@ public class Pay extends AppCompatActivity {
         intent.putExtra(PayPalService.EXTRA_PAYPAL_CONFIGURATION, cong);
 
         //Puting paypal payment to the intent
-        intent.putExtra(PaymentActivity.EXTRA_PAYMENT, PayPalPayment);
+        intent.putExtra(PaymentActivity.EXTRA_PAYMENT, payPalPayment);
 
         //Starting the intent activity for result
         //the request code will be used on the method onActivityResult
@@ -87,13 +88,13 @@ public class Pay extends AppCompatActivity {
             //If the result is OK i.e. user has not canceled the payment
             if (resultCode == RESULT_OK) {
                 //Getting the payment confirmation
-                PaymentConfirmation confirm = data.getParcelableExtra(PaymentActivity.EXTRA_RESULT_CONFIRMATION);
+                PaymentConfirmation confirmation = data.getParcelableExtra(PaymentActivity.EXTRA_RESULT_CONFIRMATION);
 
                 //if confirmation is not null
-                if (confirm != null) {
+                if (confirmation != null) {
                     try {
                         //Getting the payment details
-                        String paymentDetails = confirm.toJSONObject().toString(4);
+                        String paymentDetails = confirmation.toJSONObject().toString(4);
 
                         //Starting a new activity for the payment details and also putting the payment details with intent
                         startActivity(new Intent(this, Paymentdetails.class)

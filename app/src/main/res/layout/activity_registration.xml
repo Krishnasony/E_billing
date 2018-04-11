@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@drawable/round_button"
     android:orientation="vertical"
     tools:context="com.example.krishanasony.e_billing.RegistrationActivity">
 
@@ -13,6 +14,7 @@
         android:orientation="horizontal"
         android:layout_marginTop="70dp">
         <Button
+            android:id="@+id/addbtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="ADD"
@@ -64,15 +66,17 @@
             android:paddingLeft="13dp"/>
         <Button
             android:id="@+id/regbtn"
-            android:layout_width="match_parent"
-            android:layout_height="38dp"
-            android:text="register Service"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:textColor="#ffff"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text="Register Service"
+            android:background="@drawable/round"
+            android:textColor="#fff"
             android:textStyle="bold"
-            android:layout_marginTop="35dp"
-            android:background="#2ba61e"/>
+            android:textSize="25dp"
+            android:layout_marginTop="30dp"
+            android:textAlignment="center"
+            android:layout_marginLeft="77dp"/>
+
 
     </LinearLayout>
 </LinearLayout>

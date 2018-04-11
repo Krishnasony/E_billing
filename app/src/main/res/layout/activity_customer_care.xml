@@ -3,10 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:orientation="vertical"
-    android:layout_marginTop="40dp"
-
+    android:layout_marginTop="0dp"
+android:background="@drawable/round_button"
     tools:context="com.example.krishanasony.e_billing.Bill_payActivity">
     <android.support.v7.widget.CardView
         android:layout_width="350dp"
@@ -73,15 +73,16 @@
         android:paddingBottom="180dp"/>
     <Button
         android:id="@+id/sub_btn"
-        android:layout_width="match_parent"
-        android:layout_height="35dp"
-        android:text="submit"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:textColor="#ffff"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:background="@drawable/round"
+        android:textColor="#fff"
         android:textStyle="bold"
-        android:layout_marginTop="17dp"
-        android:background="#2ba61e"/>
+        android:textSize="25dp"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:layout_marginLeft="77dp"/>
 
 
 </LinearLayout>

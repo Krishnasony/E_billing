@@ -18,6 +18,7 @@ import com.google.firebase.auth.FirebaseAuth;
 public class EbsSignin extends AppCompatActivity {
     EditText editemail , editpassword;
     Button signin;
+    TextView forgot;
     FirebaseAuth mAuth;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +27,16 @@ public class EbsSignin extends AppCompatActivity {
         editemail = findViewById(R.id.email1);
         editpassword =findViewById(R.id.pass1);
         signin = findViewById(R.id.signin1);
+        TextView forgot = findViewById(R.id.forgot);
+
+        forgot.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(EbsSignin.this,forgot_Pssd.class));
+            }
+        });
+
+
         TextView click = findViewById(R.id.clickhere);
         click.setOnClickListener(new View.OnClickListener() {
             @Override
