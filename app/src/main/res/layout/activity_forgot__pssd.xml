@@ -18,6 +18,7 @@
         android:layout_marginLeft="45dp"
         android:layout_marginRight="45dp"
         android:paddingLeft="10dp"
+        android:inputType="textEmailAddress"
         />
     <Button
         android:id="@+id/changepasword"

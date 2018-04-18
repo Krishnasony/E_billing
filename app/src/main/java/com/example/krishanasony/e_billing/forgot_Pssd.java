@@ -28,19 +28,22 @@ public class forgot_Pssd extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String Email = edtTextmail.getText().toString().trim();
-                FirebaseAuth.getInstance().sendPasswordResetEmail(Email)
-                        .addOnCompleteListener(new OnCompleteListener<Void>() {
-                            @Override
-                            public void onComplete(@NonNull Task<Void> task) {
-                                if (task.isSuccessful()) {
-                                    Toast.makeText(forgot_Pssd.this, "Reset Password Link Sent successfuly to yor email", Toast.LENGTH_SHORT).show();
+                if (Email.isEmpty()) {
+                    Toast.makeText(forgot_Pssd.this, "Please Enter Email and Password..? and try again", Toast.LENGTH_SHORT).show();
+                }
+                else {
+                    FirebaseAuth.getInstance().sendPasswordResetEmail(Email)
+                            .addOnCompleteListener(new OnCompleteListener<Void>() {
+                                @Override
+                                public void onComplete(@NonNull Task<Void> task) {
+                                    if (task.isSuccessful()) {
+                                        Toast.makeText(forgot_Pssd.this, "Reset Password Link Sent successfuly to yor email", Toast.LENGTH_SHORT).show();
+                                    } else {
+                                        Toast.makeText(forgot_Pssd.this, "Error During sending ? Please Try Again!", Toast.LENGTH_SHORT).show();
+                                    }
                                 }
-                                else {
-                                    Toast.makeText(forgot_Pssd.this, "Error During sending ? Please Try Again!", Toast.LENGTH_SHORT).show();
-                                }
-                            }
-                        });
-
+                            });
+                }
             }
         });
 

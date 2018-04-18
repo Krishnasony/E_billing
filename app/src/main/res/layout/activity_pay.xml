@@ -12,32 +12,39 @@
         android:layout_width="match_parent"
         android:layout_centerInParent="true"
         android:layout_height="wrap_content">
-        <android.support.v7.widget.CardView
-            android:layout_width="350dp"
-            android:layout_height="70dp"
-            android:elevation="13dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="50dp"
-            android:layout_marginTop="80dp"
 
-            >
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="40dp"
-                android:hint="Enter Number Of Unit Used :"
-                android:textSize="20dp"
-                android:textStyle="bold"
-
-                />
-
-        </android.support.v7.widget.CardView>
         <android.support.v7.widget.CardView
             android:layout_width="350dp"
             android:layout_height="70dp"
             android:elevation="13dp"
             android:layout_marginLeft="8dp"
             android:layout_marginTop="20dp"
+            android:layout_marginRight="40dp"
+
+            >
+
+            <EditText
+                android:id="@+id/current"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:hint="Enter Current Unit Of Bord:"
+                android:inputType="number"
+                android:textSize="20dp"
+                android:textStyle="bold"
+
+                />
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="350dp"
+            android:layout_height="70dp"
+            android:elevation="13dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="70dp"
 
             >
 
@@ -50,6 +57,7 @@
                 android:hint="Total Amount:"
                 android:textSize="20dp"
                 android:textStyle="bold"
+                android:inputType="number"
 
                 />
 

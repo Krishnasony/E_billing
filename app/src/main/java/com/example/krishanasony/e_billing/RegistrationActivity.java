@@ -13,7 +13,7 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class RegistrationActivity extends AppCompatActivity{
     EditText nametxt,edt1;
-    Button regbtn,addbtn;
+    Button regbtn,addbtn,delete;
     FirebaseDatabase db;
     DatabaseReference Register;
 
@@ -27,6 +27,7 @@ public class RegistrationActivity extends AppCompatActivity{
         nametxt=findViewById(R.id.nametxt);
         regbtn=findViewById(R.id.regbtn);
         addbtn=findViewById(R.id.addbtn);
+        delete =findViewById(R.id.delete);
         addbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -46,5 +47,21 @@ public class RegistrationActivity extends AppCompatActivity{
                     Toast.makeText(getApplicationContext(),"Successfully Registered",Toast.LENGTH_LONG).show();
                 }
         });
+        delete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                delete_registrationnumber(edt1);
+            }
+        });
     }
+
+    private void delete_registrationnumber(EditText edt1) {
+        DatabaseReference Register = FirebaseDatabase.getInstance().getReference("Register").child("L8uzL4Fc-hmsmJjAqLQ");
+        Register.removeValue();
+        Toast.makeText(getApplicationContext(),"Successfully deleted",Toast.LENGTH_LONG).show();
+
+
+    }
+
 }
+

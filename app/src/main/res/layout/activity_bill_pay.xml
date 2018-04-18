@@ -14,6 +14,7 @@
      android:elevation="13dp"
      android:layout_marginLeft="17dp"
      android:layout_marginTop="20dp"
+     android:layout_marginRight="70dp"
 
 
      >
@@ -32,7 +33,9 @@
          android:layout_height="match_parent"
          android:hint="4253563645646"
          android:layout_marginTop="12dp"
-         android:layout_marginLeft="50dp"/>
+         android:layout_marginLeft="50dp"
+         android:inputType="number"
+         />
 
  </android.support.v7.widget.CardView>
     <android.support.v7.widget.CardView
@@ -41,6 +44,7 @@
         android:elevation="13dp"
         android:layout_marginLeft="17dp"
         android:layout_marginTop="20dp"
+        android:layout_marginRight="70dp"
 
         >
         <TextView
@@ -59,7 +63,8 @@
             android:layout_height="match_parent"
             android:hint="xyz"
             android:layout_marginTop="9dp"
-            android:layout_marginLeft="50dp"/>
+            android:layout_marginLeft="50dp"
+            android:inputType="text"/>
 
     </android.support.v7.widget.CardView>
     <android.support.v7.widget.CardView
@@ -68,6 +73,7 @@
         android:elevation="13dp"
         android:layout_marginLeft="17dp"
         android:layout_marginTop="20dp"
+        android:layout_marginRight="70dp"
 
         >
         <TextView
@@ -84,11 +90,14 @@
             android:id="@+id/b_dat"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:hint="29-03-2018"
+            android:hint="DD-MM-YY"
             android:layout_marginTop="9dp"
-            android:layout_marginLeft="50dp"/>
+            android:layout_marginLeft="50dp"
+            android:inputType="datetime"/>
 
     </android.support.v7.widget.CardView>
+
+
 
 
 

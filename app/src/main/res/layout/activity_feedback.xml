@@ -24,6 +24,7 @@
         android:layout_marginTop="35dp"
         android:paddingBottom="210dp"
         android:hint="Enter your suggestionm here,Not more than 1000 character"
+        android:inputType="textCapCharacters"
         />
     <Button
         android:id="@+id/btn"

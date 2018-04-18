@@ -28,8 +28,7 @@ public class Bill_payActivity extends AppCompatActivity {
         sc_no = findViewById(R.id.sc_no);
         con_nm = findViewById(R.id.con_nm);
         b_dat = findViewById(R.id.b_dat);
-        //amt_txt = findViewById(R.id.amt_txt);
-
+        //current_unit = findViewById(R.id.current_unit);
 
         sub_btn = findViewById(R.id.sub_btn);
 
@@ -40,13 +39,13 @@ public class Bill_payActivity extends AppCompatActivity {
                 final String servicenumber = sc_no.getText().toString().trim();
                 final String coonsumername = con_nm.getText().toString().trim();
                 final String billingdate = b_dat.getText().toString().trim();
-                //final String totalamount = amt_txt.getText().toString().trim();
+               // final String currentUnit = current_unit.getText().toString().trim();
 
-                Bill_pay.child("service_number").setValue(servicenumber);
-                Bill_pay.child("consumer_name").setValue(coonsumername);
-                Bill_pay.child("billing_date").setValue(billingdate);
-               // Bill_pay.child("total_amount").setValue(totalamount);
-                Toast.makeText(getApplicationContext(), "Confirm payment", Toast.LENGTH_LONG).show();
+                Bill_pay.child("serviceNumber").setValue(servicenumber);
+                Bill_pay.child("consumerName").setValue(coonsumername);
+                Bill_pay.child("billingDate").setValue(billingdate);
+              // Bill_pay.child("currentUnit").setValue(current_unit);
+                Toast.makeText(getApplicationContext(), "To Confirm payment Click On Pay Button", Toast.LENGTH_LONG).show();
             }
 
             });

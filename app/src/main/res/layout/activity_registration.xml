@@ -24,6 +24,7 @@
             android:textStyle="bold"
             />
         <Button
+            android:id="@+id/delete"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Delete"
@@ -50,11 +51,12 @@
             android:id="@+id/nametxt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Enter Your Name"
+            android:hint="Enter Your name"
             android:layout_marginTop="18dp"
             android:layout_marginLeft="15dp"
             android:layout_marginRight="10dp"
-            android:paddingLeft="13dp"/>
+            android:paddingLeft="13dp"
+            />
         <EditText
             android:id="@+id/edt1"
             android:layout_width="match_parent"
@@ -63,7 +65,8 @@
             android:layout_marginTop="18dp"
             android:layout_marginLeft="15dp"
             android:layout_marginRight="10dp"
-            android:paddingLeft="13dp"/>
+            android:paddingLeft="13dp"
+            android:inputType="number"/>
         <Button
             android:id="@+id/regbtn"
             android:layout_width="220dp"

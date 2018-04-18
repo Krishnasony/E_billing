@@ -29,6 +29,7 @@ public class EbsSignin extends AppCompatActivity {
         signin = findViewById(R.id.signin1);
         TextView forgot = findViewById(R.id.forgot);
 
+
         forgot.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -52,21 +53,33 @@ public class EbsSignin extends AppCompatActivity {
 
                 String Email = editemail.getText().toString().trim();
                 String Password = editpassword.getText().toString().trim();
-                mAuth.signInWithEmailAndPassword(Email,Password).addOnSuccessListener(new OnSuccessListener<AuthResult>() {
-                    @Override
-                    public void onSuccess(AuthResult authResult) {
-                        Toast.makeText(EbsSignin.this, "Login Successful", Toast.LENGTH_SHORT).show();
-                        startActivity(new Intent(EbsSignin.this,HomeActivity.class));
 
-                    }
-                }).addOnFailureListener(new OnFailureListener() {
-                    @Override
-                    public void onFailure(@NonNull Exception e) {
-                        Toast.makeText(EbsSignin.this, "Login Failed"+e.getMessage(), Toast.LENGTH_SHORT).show();
+                if (Email.isEmpty() & Password.isEmpty()) {
+                    Toast.makeText(EbsSignin.this, "Please Enter Email and Password..? and try again", Toast.LENGTH_SHORT).show();
 
-                    }
-                });
 
+                } else if (Email.isEmpty()) {
+                    Toast.makeText(EbsSignin.this, "Please Enter Email and Password..? and try again", Toast.LENGTH_SHORT).show();
+                } else if (Password.isEmpty()) {
+                    Toast.makeText(EbsSignin.this, "Please Enter Email and Password..? and try again", Toast.LENGTH_SHORT).show();
+
+                } else {
+                    mAuth.signInWithEmailAndPassword(Email, Password).addOnSuccessListener(new OnSuccessListener<AuthResult>() {
+                        @Override
+                        public void onSuccess(AuthResult authResult) {
+                            Toast.makeText(EbsSignin.this, "Login Successful", Toast.LENGTH_SHORT).show();
+                            startActivity(new Intent(EbsSignin.this, HomeActivity.class));
+
+                        }
+                    }).addOnFailureListener(new OnFailureListener() {
+                        @Override
+                        public void onFailure(@NonNull Exception e) {
+                            Toast.makeText(EbsSignin.this, "Login Failed" + e.getMessage(), Toast.LENGTH_SHORT).show();
+
+                        }
+                    });
+
+                }
             }
         });
     }
